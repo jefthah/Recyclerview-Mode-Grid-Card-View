@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/my_primary_color</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- Theme untuk activity Anda -->
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication">
+        <item name="colorPrimary">@color/my_primary_color</item>
+        <!-- Atur properti tambahan jika diperlukan -->
+    </style>
+
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
+        <!-- Atur warna background action bar -->
+        <item name="background">@color/my_primary_color</item>
+        <!-- Atur warna teks pada action bar menjadi putih -->
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
